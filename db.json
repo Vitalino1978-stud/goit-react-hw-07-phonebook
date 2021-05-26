@@ -1,79 +1,54 @@
 {
   "contacts": [
     {
-      "name": "Lesita",
-      "number": "258414",
+      "name": "Vitalii Susulovskyi",
+      "number": "0509520316",
       "id": 1
     },
     {
-      "name": "Vitalii",
-      "number": "2555",
+      "name": "andy",
+      "number": "852266",
       "id": 2
     },
     {
-      "name": "Andriy",
-      "number": "4585",
+      "name": "Vitalii Susulovskyi",
+      "number": "2511",
       "id": 3
     },
     {
-      "name": "Lesita",
-      "number": "52200",
+      "name": "andy",
+      "number": "84820145632",
       "id": 4
     },
     {
-      "name": "Lesita",
-      "number": "2544",
+      "name": "lew",
+      "number": "852266",
       "id": 5
     },
     {
       "name": "Vitalii",
-      "number": "5641",
+      "number": "25411",
       "id": 6
     },
     {
       "name": "Lesita",
-      "number": "524455",
+      "number": "2541",
       "id": 7
     },
     {
-      "name": "Vitalii",
-      "number": "254",
+      "name": "Andriy",
+      "number": "2511",
       "id": 8
     },
     {
-      "name": "Lesita",
-      "number": "254",
+      "name": "Vitalii Susulovskyi",
+      "number": "2511",
       "id": 9
     },
     {
-      "name": "Vital",
-      "number": "522",
+      "name": "andy",
+      "number": "84820145632",
       "id": 10
-    },
-    {
-      "name": "Lesita",
-      "number": "852",
-      "id": 11
-    },
-    {
-      "name": "Andriy",
-      "number": "8521",
-      "id": 12
-    },
-    {
-      "name": "Vitalii",
-      "number": "741",
-      "id": 13
-    },
-    {
-      "name": "Lesita",
-      "number": "8522",
-      "id": 14
-    },
-    {
-      "name": "Andriy",
-      "number": "5214",
-      "id": 15
     }
   ]
 }
