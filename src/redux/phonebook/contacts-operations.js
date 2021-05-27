@@ -6,7 +6,21 @@ import {
   deleteContactRequest,
   deleteContactSuccess,
   deleteContactFailure,
+  fetchContactsRequest,
+  fetchContactsSuccess,
+  fetchContactsFailure,
 } from './contacts-actions';
+
+const fetchContacts = () => async dispatch => {
+  dispatch(fetchContactsRequest());
+
+  try {
+    const { data } = await axios.get('http://localhost:3000/contacts');
+    dispatch(fetchContactsSuccess(data));
+  } catch (error) {
+    dispatch(fetchContactsFailure(error));
+  }
+};
 
 const addContact = values => dispatch => {
   const contact = {
@@ -30,6 +44,7 @@ const deleteContact = contactId => dispatch => {
 };
 
 export default {
+  fetchContacts,
   addContact,
   deleteContact,
 };

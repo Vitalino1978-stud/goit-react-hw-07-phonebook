@@ -3,6 +3,14 @@
 import { createAction } from '@reduxjs/toolkit';
 // import shortid from 'shortid';
 
+export const fetchContactsRequest = createAction(
+  'contacts/fetchContactsRequest',
+);
+export const fetchContactsSuccess = createAction(
+  'contacts/fetchContactsSuccess',
+);
+export const fetchContactsFailure = createAction('contacts/fetchContactsError');
+
 export const addContactRequest = createAction('contacts/addContactRequest');
 export const addContactSuccess = createAction('contacts/addContactSuccess');
 export const addContactFailure = createAction('contacts/addContactError');

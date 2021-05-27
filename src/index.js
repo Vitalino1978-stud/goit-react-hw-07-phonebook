@@ -7,9 +7,11 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <PersistGate loading={null} persistor={store.persistor}> */}
     <Provider store={store.store}>
       <App />
     </Provider>
+    {/* </PersistGate> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );

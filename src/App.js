@@ -1,7 +1,10 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import ContactList from './components/ContactList/ContactList.jsx';
 import ContactForm from './components/ContactForm/ContactForm.jsx';
 import Filter from './components/Filter/Filter.jsx';
+import oper from './redux/phonebook/contacts-operations';
+import { getLoading } from './redux/phonebook/contacts-selectors';
 // import shortid from 'shortid';
 
 class App extends Component {
@@ -39,7 +42,9 @@ class App extends Component {
   //     filter: event.currentTarget.value,
   //   });
   // };
-
+  componentDidMount() {
+    this.props.fetchContacts();
+  }
   // componentDidMount() {
   //   const contacts = localStorage.getItem('contacts');
   //   const parsedContacts = JSON.parse(contacts);
@@ -81,4 +86,14 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  // isLoadingContacts: state.contacts.loading,
+  isLoadingContacts: getLoading(state),
+});
+
+const mapDispatchToProps = dispatch => ({
+  fetchContacts: () => dispatch(oper.fetchContacts()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+// export default App;
