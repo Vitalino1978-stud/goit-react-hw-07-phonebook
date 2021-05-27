@@ -16,6 +16,7 @@ const fetchContacts = () => async dispatch => {
 
   try {
     const { data } = await axios.get('http://localhost:3000/contacts');
+    console.log(data);
     dispatch(fetchContactsSuccess(data));
   } catch (error) {
     dispatch(fetchContactsFailure(error));

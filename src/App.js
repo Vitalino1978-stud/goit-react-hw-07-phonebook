@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { connect } from 'react-redux';
 import ContactList from './components/ContactList/ContactList.jsx';
 import ContactForm from './components/ContactForm/ContactForm.jsx';
@@ -43,6 +44,9 @@ class App extends Component {
   //   });
   // };
   componentDidMount() {
+    // axios
+    //   .get('http://localhost:3000/contacts')
+    //   .then(response => console.log(response.data));
     this.props.fetchContacts();
   }
   // componentDidMount() {
